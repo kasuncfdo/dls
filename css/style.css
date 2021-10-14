@@ -638,7 +638,7 @@ nav ul li{
 
 
 footer{
-// background-image: url("../img/footer.jpg");
+    background-image: url("../img/footer.jpg");
 	background-color: #F0F0F0;
 	background-size: cover;
 	background-position: top center;
