@@ -932,6 +932,7 @@ body{
 }
 
 .gray-bg {
+	background-image: url(../img/footer.jpg);
     background-color: #f5f5f5;
 }
 /* Contact Us
