@@ -465,7 +465,7 @@ nav ul li{
 
 .carousel-items{
 	overflow: hidden;
-	border: 3px solid rgb(15,108,107);
+	border: 3px solid rgb(10, 11, 59);
 	border-bottom: 0;
 	border-top: 0;
 }
