@@ -496,7 +496,7 @@ nav ul li{
 	margin-bottom: 0;
 	/*background-color: rgb(15,108,107);*/
 	border: 0;
-	color: rgb(15,108,107);
+	color: rgb(10, 11, 59);
 	padding: 10px 30px;
 }
 .gallery-design .title h1.title-design {
@@ -581,7 +581,7 @@ nav ul li{
 	width: 100%;
 	display: inline-block;
 	box-sizing: border-box;
-	background-color: rgb(15,108,107);;
+	background-color: rgb(10, 11, 59);;
 	font-size: 1em;
 	line-height: 1.8em;
 	transition: transform 0.3s;
