@@ -1063,4 +1063,19 @@ body{
     transform: rotate(45deg);
 }
 
+// Announcement
+.ed-rese-grid-announcements{
+    padding: 25px;
+    box-shadow: 0px 0px 10px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    /* display: inline-block; */
+    overflow: hidden;
+    margin: 0px 8px;
+}
+.ed-rese-grid-announcements:hover{
+    box-shadow: 0px 0px 10px;
 
