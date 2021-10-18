@@ -181,7 +181,7 @@ nav ul li{
 }
 
 #dropdown1{
-	 overflow: hidden;
+	// overflow: hidden;
 }
 
 .logo-name{
@@ -286,7 +286,7 @@ nav ul li{
 
 
 .widgets-wrapper{
-	background-color:rgb(#0a0b3b);
+	background-color:rgb(15,108,107);
 	padding:3rem 3rem 8rem 3rem;
 }
 
@@ -923,7 +923,6 @@ body{margin-top:20px;}
 }
 
 // Get In Touch
-
 body{
     color: #6F8BA4;
     margin-top:20px;}
