@@ -1063,6 +1063,131 @@ body{
     transform: rotate(45deg);
 }
 
+// Events 
+
+/*-------------------------------------------------*/
+/* = 28.EVENTS 
+/*-------------------------------------------------*/
+.pg-events{
+}
+ .pg-eve-date{
+     width: 75px;
+}
+ .pg-eve-desc{
+}
+ .pg-eve-reg{
+     float: right;
+     margin-top: 35px;
+}
+ .pg-eve-reg a{
+     padding: 6px 25px;
+     border-radius: 3px;
+     text-transform: uppercase;
+     font-weight: 600;
+     font-size: 14px;
+     height: 35px;
+     text-align: center;
+    /* margin: 0px 10px;
+     */
+    /* background: linear-gradient(to top, #ef612f, #0A0B3B);
+     */
+     color: #0A0B3B;
+     border: 1px solid #0A0B3B;
+     margin-left: 10px;
+}
+ .pg-eve-reg a:hover{
+     color: #ffffff;
+     border: 1px solid #d45023;
+     background: #f26838;
+}
+ .pg-eve-reg:nth-child(1) a{
+}
+ .pg-eve-reg:nth-child(2) a{
+}
+ .p-event{
+     background: url(http://www.stjosephscollege.lk/images/event-bg.jpg);
+}
+ .p-event:before {
+     background: #8d54e9;
+     background: #4776E6;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #8E54E9, #4776e6d6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ .eve-reg-text{
+}
+ .eve-reg-text p{
+     color: #dfcdff;
+}
+ .eve-deta{
+}
+ .eve-deta ul li{
+     background: #625ed4;
+     border: 1px solid #8d86e4;
+     color: #edeeef;
+}
+ .eve-deta ul li span{
+     color: #c8ccd0;
+}
+ .pg-pagina{
+     margin: 0 auto;
+     display: table;
+     margin-top: 50px;
+}
+ .pg-eve-main{
+}
+ .pg-eve-main ul li:hover .pg-eve-reg a:nth-child(1){
+     color: #ffffff;
+     border: 1px solid #d45023;
+     background: #f26838;
+}
+ .head-2{
+     padding: 55px 0px 40px 0px;
+     background: rgb(10, 11, 59);
+     position: relative;
+}
+ .head-2:before{
+     content: '';
+     position: absolute;
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     width: 100%;
+}
+ .head-2-inn{
+     position: relative;
+     text-align: center;
+}
+ .head-2-inn h1{
+     margin-top: 0px;
+     color: #fff;
+     font-family: sans-serif;
+     padding-bottom: 18px;
+     line-height: 42px;
+     text-shadow: 2px 0px 0px #000;
+}
+ .head-2-inn p{
+     color: #fff;
+     font-family: Goudy Old Style;
+     font-size: 18px;
+}
+ .event-head-sub{
+     display: inline-block;
+     margin-top: 8px;
+}
+ .event-head-sub ul{
+}
+ .event-head-sub ul li{
+     color: #fff;
+     float: left;
+     margin-right: 15px;
+     border: 1px solid #bfcaec;
+     padding: 0px 10px;
+     border-radius: 15px;
+     margin-bottom: 10px;
+
 // Announcement
 .ed-ad-img{
     /* width: 30%;
