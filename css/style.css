@@ -1062,3 +1062,83 @@ body{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+//
+
+p{
+	font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+  }
+  
+  .css_blink {
+	  -webkit-animation-name: blinker;
+	  -webkit-animation-duration: 2s;
+	  -webkit-animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+  
+	  -moz-animation-name: blinker;
+	  -moz-animation-duration: 2s;
+	  -moz-animation-timing-function: linear;
+	  -moz-animation-iteration-count: infinite;
+  
+	  animation-name: blinker;
+	  animation-duration: 2s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes blinker {  
+	  50% { opacity: 0.1; }
+	  100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes blinker {  
+	  50% { opacity: 0.1; }
+	  100% { opacity: 1.0; }
+  }
+  
+  @keyframes blinker {  
+	  50% { opacity: 0.1; }
+	  100% { opacity: 1.0; }
+  }
+
+  .read-more-state {
+	display: none;
+  }
+  
+  .read-more-target {
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+	content: 'Show more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+	content: 'Show less';
+  }
+  
+  .read-more-trigger {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 .5em;
+	color: #666;
+	font-size: .9em;
+	line-height: 2;
+	border: 1px solid #ddd;
+	border-radius: .25em;
+  }
+	  .carousel-items{
+		  height: 450px;
+	  }
+
