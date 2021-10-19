@@ -606,8 +606,8 @@ nav ul li{
 
 .alert-warning{
 	background-color: white;
-	border: 0;
-	border-radius: 0;
+	border: 2px;
+	border-radius: 1;
 }
 
 /****************
