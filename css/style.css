@@ -1166,10 +1166,10 @@ body{
 
 //
 
-body{margin-top:20px;}
+body{margin-top:10px;}
 .blog-listing {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .gray-bg {
     background-color: #f5f5f5;
@@ -1181,8 +1181,8 @@ body{margin-top:20px;}
   border-radius: 5px;
   overflow: hidden;
   background: #ffffff;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .blog-grid .blog-img {
   position: relative;
@@ -1193,7 +1193,7 @@ body{margin-top:20px;}
   color: #ffffff;
   padding: 8px 15px;
   left: 10px;
-  top: 10px;
+  top: 17px;
   border-radius: 4px;
 }
 .blog-grid .blog-img .date span {
@@ -1440,4 +1440,3 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-
