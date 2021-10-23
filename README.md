@@ -1,5 +1,5 @@
 # College Website
-### Welcome to the new official website project of IIIT-Vadodara. 
+### Welcome to the new official website project of DLS College. 
 
 [![Join the chat at https://gitter.im/iiitv/college_website](https://badges.gitter.im/iiitv/college_website.svg)](https://gitter.im/iiitv/college_website?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
