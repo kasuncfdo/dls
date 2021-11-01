@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/scss" href="scss/nav-style.scss">
 </head>
 
 <body>
@@ -237,6 +238,36 @@
                     <p></p>
             </div>
         </div>
+        <div id="navbarContainer">
+            <div id="navbar">
+              <div id="bubbleWrapper">
+                <div id="bubble1" class="bubble"><span class="icon"><i class="fas fa-home"></i></span></div>
+                <div id="bubble2" class="bubble"><span class="icon"><i class="fab fa-twitter"></i></span></div>
+                <div id="bubble3" class="bubble"><span class="icon"><i class="fas fa-bell"></i></span></div>
+                <div id="bubble4" class="bubble"><span class="icon"><i class="fas fa-user"></i></span></div>
+              </div>
+              <div id="menuWrapper">
+                <div id="menu1" class="menuElement" onclick="move('1', '50px', '#ffcc80')"><i class="fas fa-home"></i></div>
+                <div id="menu2" class="menuElement" onclick="move('2', '150px', '#81d4fa')"><i class="fab fa-twitter"></i></div>
+                <div id="menu3" class="menuElement" onclick="move('3', '250px', '#c5e1a5')"><i class="fas fa-bell"></i></div>
+                <div id="menu4" class="menuElement" onclick="move('4', '350px', '#ce93d8')"><i class="fas fa-user"></i></div>
+              </div>
+            </div>
+            <div id="bgWrapper">
+              <div id="bg"></div>
+              <div id="bgBubble"></div>
+            </div>
+          </div>
+          
+            <svg width="0" height="0" >
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" id="blurFilter"/>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15" result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+              </defs>
+            </svg>
         <!-- Footer -->
         <footer>
             <div class="footer-wrapper">
@@ -286,6 +317,7 @@
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script src="js/main.js"></script>
     <script>
     $(document).on('click', function (e) {
     var
