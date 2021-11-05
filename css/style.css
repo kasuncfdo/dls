@@ -1441,3 +1441,7 @@ img {
     border-style: none;
 }
 
+.navbar-nav > li:hover > .dropdown-menu {
+  display: block;
+}
+
