@@ -144,10 +144,6 @@ nav{
   display: block  
 }
 
-.dropdown-menu.multi-level {
-  display: ruby-base;
-}
-
 .navbar-inverse .navbar-nav > li > a{
 	color: rgba(255,255,255,0.9);
 	line-height: 1.1;
