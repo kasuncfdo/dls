@@ -145,7 +145,7 @@ nav{
 }
 
 .dropdown-menu.multi-level {
-  display: block;
+  display: ruby-base;
 }
 
 .navbar-inverse .navbar-nav > li > a{
