@@ -133,7 +133,7 @@ nav{
 	margin-bottom: 0;
 }
 
-.navbar-nav > li:hover > .dropdown-menu {
+.navbar-nav > li:hover >  {
   display: block;
 }
 
