@@ -138,7 +138,7 @@ nav{
 }
 
 .dropdown-menu.multi-level {
-  display: none;
+  display: block;
 }
 .nav.navbar-nav li:hover ul {
   display: block  
