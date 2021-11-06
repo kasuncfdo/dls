@@ -39,6 +39,31 @@ ul a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
+
+.toggle-btn {
+    cursor: pointer;
+    background: none;
+    float: right;
+    border: none;
+}
+.icon-bar1, .icon-bar2, .icon-bar3 {
+  background-color: #fff;
+    margin: 8px 0;
+    width: 40px;
+    height: 3px;
+    transition: 0.6s;
+}
+.rotate-icons .icon-bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+}
+.rotate-icons .icon-bar2 {
+  opacity: 0;
+}
+.rotate-icons .icon-bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+}
     </style>
 </head>
 
@@ -862,6 +887,14 @@ Reference: http://avexdesigns.com/responsive-youtube-embed/
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/434d359724.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // Rotate Icons class added by jQuery
+        $(document).ready(function(){
+            $(".toggle-btn").click(function(){
+              $(this).toggleClass("rotate-icons");
+            });
+        });
+        </script>
     <script>
     $(document).on('click', function (e) {
     var
