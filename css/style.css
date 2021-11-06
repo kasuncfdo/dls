@@ -133,11 +133,11 @@ nav{
 	margin-bottom: 0;
 }
 
-.navbar-nav > li:hover >  {
+.navbar-nav > li:hover > .dropdown-menu {
   display: block;
 }
 
-.multi-level {
+.dropdown-menu.multi-level {
   display: none;
 }
 .nav.navbar-nav li:hover ul {
