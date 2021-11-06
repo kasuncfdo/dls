@@ -137,7 +137,7 @@ nav{
   display: block;
 }
 
-.dropdown-menu.multi-level {
+.multi-level {
   display: none;
 }
 .nav.navbar-nav li:hover ul {
