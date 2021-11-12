@@ -137,8 +137,8 @@ nav{
   display: block;
 }
 
-.nav.navbar-nav li:hover ul {
-  display: block  
+.dropdown-menu.multi-level {
+  display: none;
 }
 
 .navbar-inverse .navbar-nav > li > a{
