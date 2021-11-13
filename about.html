@@ -12,6 +12,25 @@
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<style>
+.nav-links li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+
+    .nav-links li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+    }
+</style>
 
 <body>
     <!-- Start Your Body Code From here -->
