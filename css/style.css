@@ -143,11 +143,7 @@ nav{
 
 .navbar-inverse .navbar-nav > li > a{
 	color: rgba(255,255,255,0.9);
-	line-height: 1.1;{
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition:all 0.5s ease;}
+	line-height: 1.1;
 /*  line-height: 2.2;  */
 }
 
