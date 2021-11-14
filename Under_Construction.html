@@ -187,6 +187,205 @@ h2 {
         </div>
     </div>
     </section>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+    .card {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      height: fit-content;
+      padding: 0 0 2rem 0;
+      position: relative;
+      &.truncate {
+        .card_text {
+          overflow: hidden;
+          max-height: 8rem;
+          -webkit-box-orient: vertical;
+          display: block;
+          display: -webkit-box;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+        }
+
+        .more {
+          transform: rotate(180deg);
+
+        }
+      }
+
+      .card_image {
+        max-height: 250px;
+      }
+      .card_content {
+        padding: 1rem;
+
+        .card_title {
+          margin: 0.5rem 0;
+        }
+
+        .card_text {
+          margin: 0;
+          .note {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #ffffff95;
+            font-weight: 600;
+            border-radius: 0.1rem;
+            padding: 0.1rem 0.5rem;
+            text-transform: uppercase;
+          }
+        }}
+        .more {
+          cursor: pointer;
+          position: absolute;
+          bottom: 0.25rem;
+         display:flex;
+ width:100%;
+          align-items:center;
+          justify-content:center;
+          text-align: center;
+          &:hover {
+            color: #555;
+          }
+        
+      }
+    }
+  }
+}
+
+.md {
+  font-weight: 500;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<div class="main">
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card truncate" id="farmstandSalad">
+        <div class="card_image"><img src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg" alt="mixed vegetable salad in a mason jar. "></div>
+        <div class="card_content">
+          <h2 class="card_title">Farmstand Salad &#x2022; $9</h2>
+          <div class="card_text ">
+            <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.</p>
+            <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic vinaigrette, creamy chipotle, avocado green goddess, or honey mustard.
+            </p>
+            <p class="md">Add your choice of protein for $2 more. </p>
+
+          </div>
+
+        </div>
+        <p class="more md" onClick=readMore("farmstandSalad")><span class="material-icons">
+            expand_less
+          </span></p>
+      </div>
+    </li>
+
+    <li class="cards_item">
+      <div class="card truncate" id="ultimateReuben">
+        <div class="card_image"><img src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg" alt="a Reuben sandwich on wax paper. "></div>
+        <div class="card_content">
+          <h2 class="card_title">Ultimate Reuben &#x2022; $18</h2>
+          <div class="card_text">
+            <p>All great meals take time, but this one takes it to the next level! More than 650 hours of fermenting, brining, aging, and curing goes into each and every one of our legendary Reuben sandwiches.
+            </p>
+            <p>Every element of this extraordinary sandwich is handcrafted in our kitchens, from the rye bread baked from our secret recipe to the cave-aged Swiss cheese, right down to the pickle. The only thing we didn't make on the premises is the toothpick ( but we're looking into how to do that). </p>
+            <p>This unforgettable sandwich has all of the classic Reuben elements: corned beef, rye bread, creamy Russian dressing, sauerkraut, plus a sweet gherkin pickle. No substitions please!
+
+            <p class="md">Add a side of french fries or sweet potato fries for $2 more, or our housemade pub chips for $1.</p>
+          </div>
+        
+        </div>
+          <p class="more md" onClick=readMore("ultimateReuben")><span class="material-icons">
+              expand_less
+            </span></p>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card truncate" id="figBerryPlate">
+        <div class="card_image"><img src="https://assets.codepen.io/652/photo-1544510808-91bcbee1df55.jpeg" alt="A side view of a plate of figs and berries. "></div>
+        <div class="card_content">
+          <h2 class="card_title">Fig &amp; Berry Plate &#x2022; $16</h2>
+          <div class="card_text">
+            <p><span class="note">Seasonal</span></p>
+            <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this refreshing, shareable dessert.</p>
+            <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+          </div>
+     
+        </div>
+             <p class="more md" onClick=readMore("figBerryPlate")><span class="material-icons">
+              expand_less
+            </span></p>
+      </div>
+    </li>
+  </ul>
+</div>
                 
     <!-- Footer -->
     <footer>
@@ -235,6 +434,14 @@ h2 {
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/434d359724.js"></script>
+<script>
+    const readMore = (id) => {
+  var element = document.getElementById(id);
+  element.classList.toggle("truncate");
+  console.log(element);
+};
+
+</script>
 <script>
     $(document).ready(function () {
         $('[data-toggle="popover"]').popover();
