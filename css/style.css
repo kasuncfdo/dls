@@ -1449,4 +1449,33 @@ img {
     border-style: none;
 }
 
+/*  Navbar Hover Effect
+--------------------------------*/
+.navbar-nav li{
+  list-style: none;
+}
+.navbar-nav li a{
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+.navbar-nav li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #f31111;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+.navbar-nav li a:hover:before{
+  width: 100%;
+}
+.navbar-nav li.center a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
