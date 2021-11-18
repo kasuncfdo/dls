@@ -223,16 +223,43 @@
                     </p>
                 </br>
 
-                <figure>
-                    <figcaption>Listen to the T-Rex:</figcaption>
-                    <audio
-                        controls
-                        src="College Anthem/01-College-Anthem-Voice-3.mp3">
-                            Your browser does not support the
-                            <code>audio</code> element.
-                    </audio>
-                </figure>
-                   
+                <button> start</button>
+  <audio id="myaudio" autoplay>
+    <source src="College Anthem/01-College-Anthem-Voice-3.mp3" type="audio/mpeg"/>
+  </audio>
+  <script>
+
+    var context;
+    window.onload = function() {
+     context = new AudioContext();
+      context.onstatechange = function() {
+        //if you have permissions, the audioContext will transition to 'running' immediately
+        if(context.state == 'running') {
+          play();
+        }
+      }
+    };
+
+    function play() {
+        //ensure the promise is handled here
+        var promise = document.getElementById('myaudio').play();
+        if (promise !== undefined) {
+          promise.then(_ => {
+            console.log("playing");
+          }).catch(error => {
+            // Autoplay was prevented.
+          });
+        }
+    }
+
+    //play after the user interacts with the page
+    document.querySelector('button').addEventListener('click', function() {
+      context.resume().then(function() {
+        play();
+      });
+    });
+
+  </script>       
                     
                     	
             </div>
