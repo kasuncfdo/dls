@@ -12,7 +12,17 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script>
+        import lightGallery from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.3";
+
+import lgZoom from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.3/plugins/zoom";
+
+lightGallery(document.getElementById("gallery-container"), {
+  speed: 500,
+  plugins: [lgZoom]
+});
+
+    </script>
 </head>
 
 <body id="gallery">
