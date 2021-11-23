@@ -1478,26 +1478,3 @@ img {
   transform: translateX(-50%);
 }
 
- /* For mobile devices and Tablet */
- @media screen (min-width: 320px) and (max-width: 768px) {
-  body{
-    width:1000px;
-    margin:0 auto;
-    }
-} 
-
-/* For PC with minimum resolution till your PC resolution */ 
-@media screen (min-width: 769px) and (max-width: 1400px) {
-  body{
-    width:1000px;
-    margin:0 auto;
-    }
-}
-/* For Screen Higher than 1400px */ 
-@media screen (min-width: 1401px) {
-  body{
-    width:1000px;
-    margin:0 auto;
-    }
-} 
-
