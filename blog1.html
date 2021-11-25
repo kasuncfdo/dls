@@ -543,58 +543,27 @@
                     <p></p>
             </div>
         </div>
-        <style>
-            body {margin:2rem;}
+        <style>}
 
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-
-/* 
-Extra small devices (portrait phones, less than 544px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-
-
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {  
-
-}
-
-/* Medium devices (tablets, 768px and up) 
-The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    
-}
-
-
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
-
-@media (max-width: 950px) { 
-
-}
         </style>
+        <script>
+            $(document).ready(function() {
+ // executes when HTML-Document is loaded and DOM is ready
+console.log("document is ready");
+  
+
+  $( ".card" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+  
+// document ready  
+});
+
+        </script>
         <div class="container">
             <p>Hover over the card to see the drop shadow added</p>
           
