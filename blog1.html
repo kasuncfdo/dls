@@ -543,6 +543,212 @@
                     <p></p>
             </div>
         </div>
+        <style>
+            .news-wrap {
+	width: 100%;
+	height: 100vh;
+	padding: 30px 0;
+	background: #f5f5f5;
+}
+
+.news-grid {
+	position: relative;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+	margin: 10px 0px 10px 0px;
+}
+
+.news-grid-image {
+	width: 100%;
+	height: 280px;
+	overflow: hidden;
+}
+
+.news-grid-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+
+.news-grid-box {
+	display: block;
+	position: absolute;
+	text-align: center;
+	background: #26ccca;
+	left: -80px;
+	top: 15px;
+	padding: 10px;
+	transition: .5s;
+}
+
+.news-grid-box h1 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	margin-bottom: 5px;
+}
+
+.news-grid-box p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.news-grid-txt {
+	padding: 25px;
+}
+
+.news-grid-txt span {
+	color: #26ccca;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.news-grid-txt h2 {
+	color: #111;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin: 10px 0px 5px 0px;
+}
+
+.news-grid-txt ul {
+	padding: 0;
+	margin: 0;
+}
+
+.news-grid-txt ul li {
+	list-style: none;
+	display: inline-block;
+	color: #999;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 8px 10px 8px 0px;
+	letter-spacing: 1px;
+}
+
+.news-grid-txt ul li i {
+	color: #26ccca;
+	font-size: 14px;
+	font-weight: 500;
+	margin-right: 5px;
+}
+
+.news-grid-txt p {
+	color: #222;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 170%;
+	letter-spacing: 1.5px;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+}
+
+.news-grid-txt a {
+	color: #fff;
+	background: #26ccca;
+	padding: 8px 20px;
+	border-radius: 50px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 1px;
+	text-decoration-line: none;
+	transition: .5s;
+}
+
+/*Hover-Section*/
+.news-grid:hover .news-grid-box {
+	left: 15px;
+	transition: .5s;
+}
+
+.news-grid:hover .news-grid-image img {
+	filter: grayscale(1);
+	transform: scale(1.1);
+	transition: .5s;
+}
+
+.news-grid:hover .news-grid-txt a {
+	text-decoration-line: none;
+	color: #fff;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+        </style>
+        <div class="news-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="news-grid">
+							<div class="news-grid-image"><img src="images/1.jpg" alt="">
+								<div class="news-grid-box">
+									<h1>19</h1>
+									<p>Sep</p>
+								</div></div>
+								<div class="news-grid-txt">
+									<span>Finacne</span>
+									<h2>Heading Will Be Here</h2>
+									<ul>
+										<li><i class="fa fa-calendar" aria-hidden="true"></i> Sep 19, 2020</li>
+										<li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+									</ul>
+									<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.</p>
+									<a href="#">Read More...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="news-grid">
+								<div class="news-grid-image"><img src="images/2.jpg" alt="">
+									<div class="news-grid-box">
+										<h1>20</h1>
+										<p>Sep</p>
+									</div></div>
+									<div class="news-grid-txt">
+										<span>Finacne</span>
+										<h2>Heading Will Be Here</h2>
+										<ul>
+											<li><i class="fa fa-calendar" aria-hidden="true"></i> Sep 20, 2020</li>
+											<li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+										</ul>
+										<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.</p>
+										<a href="#">Read More...</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="news-grid">
+									<div class="news-grid-image"><img src="images/3.jpg" alt="">
+										<div class="news-grid-box">
+											<h1>24</h1>
+											<p>Sep</p>
+										</div></div>
+										<div class="news-grid-txt">
+											<span>Finacne</span>
+											<h2>Heading Will Be Here</h2>
+											<ul>
+												<li><i class="fa fa-calendar" aria-hidden="true"></i> Sep 24, 2020</li>
+												<li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+											</ul>
+											<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aspernatur reprehenderit velit est voluptatum, voluptas amet quasi dicta consectetur.</p>
+											<a href="#">Read More...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
     
         <!-- Footer -->
         <footer>
