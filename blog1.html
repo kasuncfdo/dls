@@ -533,7 +533,181 @@
                     </div>
                 </div>
                 </section>
-                
+                <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+                integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+            </head>
+            <style>
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bacad9;
+}
+
+.card {
+  width: 360px;
+  height: 262px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 25px;
+  cursor: pointer;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.user-online-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #53f45a;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.profile-role {
+  color: #6d6d6d;
+}
+
+.card-footer {
+  width: 85%;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.social-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-buttons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  font-size: 23px;
+  margin: 0 20px;
+}
+
+            </style>
+            <body>
+              <div class="container">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="avatar">
+                      <div class="user-online-indicator"></div>
+                      <img
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                        alt="user-image"
+                      />
+                    </div>
+                    <div class="profile-name"><h1>Aiony Haust</h1></div>
+                    <div class="profile-role">Frontend developer</div>
+                  </div>
+          
+                  <div class="card-footer">
+                    <div class="social-buttons">
+                      <button>
+                        <i class="fab fa-instagram"></i>
+                      </button>
+          
+                      <button>
+                        <i class="fab fa-twitter"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+              <script>
+                  let tl = gsap.timeline();
+
+console.log("New");
+
+tl.from(".card", {
+  stagger: 0.2,
+  opacity: 0,
+  x: -20,
+});
+
+tl.from(".avatar img", {
+  stagger: 0.2,
+  opacity: 0,
+  y: 20,
+});
+
+tl.from(".user-online-indicator",{
+    stagger: 0.2,
+    opacity: 0,
+    y: 20,
+})
+tl.from(".profile-name",{
+    stagger: 0.2,
+    opacity: 0,
+    y: 20,
+})
+tl.from(".profile-role",{
+    stagger: 0.2,
+    opacity: 0,
+    y: 20,
+})
+
+tl.from(".social-buttons",{
+    stagger: 0.2,
+    opacity: 0,
+})
+
+              </script>  
                     <p></p>
 
                     <p></p>
