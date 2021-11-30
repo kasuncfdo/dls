@@ -397,66 +397,25 @@ body {
 
                     <p>We are inviting you to take some “time out” to read through the reflections and in someway, give you an idea of the wonderful things that happened to you during your school days. Enjoy the read and, of course, we would appreciate any feed back, questions or comments by Fax: 01-507289 or Email: dlsobu@yahoo.co.uk</p>
            
-                    <style>
-                        audio {
-  display: none;
-}
-
-.mmmm {
-  font-size: 16px;
-  color: #eee;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  padding: 15px;
-  border: none;
-  border-radius: 2px;
-  outline: none;
-  background: rgba(115, 67, 167, 0.8);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
-  cursor: pointer;
-  transition: all 0.4s ease-out;
-}
-
-button.fade:hover {
-  opacity: 0.8;
-}
-
-.fade {
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  transform: translate(0, 0);
-}
-                    </style>
-                    <audio src="melodyloops-preview-once-upon-a-christmas-fairytale-0m30s.mp3"></audio>
-<button id="mmmm">
-  <i class="fas fa-volume-up"></i>
-</button>
-<script>
-    const button = document.querySelector("#button");
-const icon = document.querySelector("#button > i");
-const audio = document.querySelector("audio");
-
-button.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.volume = 0.2;
-    audio.play();
-    icon.classList.remove('fa-volume-up');
-    icon.classList.add('fa-volume-mute');
-    
-  } else {
-    audio.pause();
-    icon.classList.remove('fa-volume-mute');
-    icon.classList.add('fa-volume-up');
-  }
-  button.classList.add("fade");
+                    <audio controls autoplay>
+                        <source src="melodyloops-preview-once-upon-a-christmas-fairytale-0m30s.mp3" type="audio/mpeg">
+                     </audio>
+                    <script>
+                        $(document).ready(function() {
+   //Do something
 });
+Or the shorthand version:
 
-</script>
+$(function() {
+   //Do something
+});
+That //Do something could be
+
+let sound = document.getElementById("audioId");
+sound.currentTime = 0;
+sound.loop = true; //if you want it to restart playing automatically when it ends
+sound.play();
+                    </script>
                 </div>
         </div>
                         </div>
