@@ -187,65 +187,7 @@
                 </div>
             </nav>
         </header>
-        <style>
-          #loading {
-    background: #FFFFFF;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    .loadingDiv {
-        background: #2a2a2a;
-        border-radius: 50%;
-        color: #FFFFFF;
-        opacity: 0;
-        height: 200px;
-        left: 50%;
-        line-height: 200px;
-        margin: -100px 0 0 -100px;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        width: 200px;
-    }
-}
-
-.main-content{
-    
-}
-        </style>
-        <div class="container">
-          <div class="main-content">Web site content</div>
-          </div>
-          <div id="loading">
-              <div class="loadingDiv">Loading</div>
-          </div>
-        
-          <script>
-            $(document).ready(function () {
-    $(".container").hide();
-    $('.loadingDiv').animate({
-        opacity: '1'
-    });
-
-    $('.loadingDiv').animate({
-        rotation: 720
-    }, {
-        step: function (now, fx) {
-            $(this).css('-webkit-transform', 'rotateY(' + now + 'deg)');
-            $(this).css('-moz-transform', 'rotateY(' + now + 'deg)');
-            $(this).css('transform', 'rotateY(' + now + 'deg)');
-        }
-    }, 'easeInOutQuint');
-});
-$(window).ready(function(){
-         $('#loading').fadeOut();
-         $('main').fadeIn();
-         $('.container').fadeIn();
-});
-          </script>
+        <!-- /header -->
         <div style="text-align: center;">
                 <a href="#" target="_blank"-->
                     <img class="responsive-img" src="gif/about.gif">
