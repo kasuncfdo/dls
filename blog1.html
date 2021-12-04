@@ -188,36 +188,25 @@
             </nav>
         </header>
         <style>
-          .placeholder-item {
-    box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
-    border-radius: 4px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-}
-.placeholder-item::before {
-    content: '';
-    display: block;
+.content{position: relative;}
+.overlay{position: absolute;left: 0; top: 0; right: 0; bottom: 0;z-index: 2;background-color: rgba(255,255,255,0.8);}
+.overlay-content {
     position: absolute;
-    left: -150px;
-    top: 0;
-    height: 100%;
-    width: 150px;
-    background: linear-gradient(to right, transparent 0%, #E8E8E8 50%, transparent 100%);
-    animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-@keyframes load {
-    from {
-        left: -150px;
-    }
-    to   {
-        left: 100%;
-    }
+    transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
 }
           
         </style>
-        <div class="placeholder-item"></div>
+        <div class="content">
+          <div class="overlay"><div class="overlay-content"><img src="gif/wave-flag animation1.gif" alt="Loading..."/></div></div>
+          <!-- Content goes here -->
+      
 
         <div style="text-align: center;">
                 <a href="#" target="_blank"-->
@@ -558,6 +547,7 @@
                     <p></p>
 
                             </div>
+                </div>
                     </div>
                 </div>
 </body>
