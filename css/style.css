@@ -968,8 +968,8 @@ body{
   margin-right: 10px;
 }
 .social-share .dribbble {
-  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
-  background-color: #ea4c89;
+  box-shadow: 0 8px 30px -4px rgb(59 151 231 / 50%);
+  background-color: #3aa3e1;
 }
 .social-share .behance {
   box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
