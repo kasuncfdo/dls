@@ -1507,11 +1507,11 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  animation: loader 4s linear infinite;
+  animation: loader 2s linear infinite;
   opacity: 0;
 }
 .loader:before{
-  animation-delay: .8s;
+  animation-delay: .5s;
 }
 @keyframes loader{
   0%{
