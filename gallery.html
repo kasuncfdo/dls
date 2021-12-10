@@ -387,6 +387,31 @@ body {
           right: 10px;
           bottom: 10px;
     }
+
+    
+
+.gallery {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+.gallery-item {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: all .3s;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
     </style>
             </section>
                      <!-- Content wrapper -->
@@ -399,6 +424,48 @@ body {
                         <h1 class="post-full-title" style="text-align: center;">COLLEGE GALLERY</h1>
                         </div>
                         <div class="post-content">
+                            
+  <h1 class="text-center">Events</h1>
+  <hr>
+  <div class="gallery">
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/arch" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/any" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/tech" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/animals" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/people" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+    <div class="view overlay hm-black-light gallery-item">
+      <img src="https://placeimg.com/640/480/any" alt="Placeholder Image" class="img-fluid">
+      <div class="mask flex-center">
+        <p class="white-text">Gallery Item</p>
+      </div>
+    </div>
+  </div>
+</div>
                     <div class="row">
 
                         <div class="col-sm-6 col-lg-4">
