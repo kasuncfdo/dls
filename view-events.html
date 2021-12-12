@@ -1567,7 +1567,13 @@ all and (min-device-pixel-ratio:1.5) {
     <script src="https://use.fontawesome.com/434d359724.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+    <script>
 			$(document).ready(function() {
 				var progressPath = document.querySelector('.progress-wrap path');
 				var pathLength = progressPath.getTotalLength();
@@ -1606,7 +1612,6 @@ all and (min-device-pixel-ratio:1.5) {
 				})
 			});
 		</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     $(document).on('click', function (e) {
     var
