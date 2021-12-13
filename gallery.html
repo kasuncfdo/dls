@@ -19,12 +19,6 @@
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/waves.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- Baguettebox CSS for image popup -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-                            
 
             <!--Site Meta-->
 
@@ -374,36 +368,59 @@ body {
 
  </style>
  <style>
-
-.photoGallery h2 {
-    font-size: 40px;
-    color: #e91212;
-}
-.photoGallery p {
-    font-size: 18px;
-    color: #9e9e9e;
-}
-
-.gallery-columns .thumbnail {
-    max-height: 235px;
-    overflow: hidden;
-    display: block;
-    border-radius: 50px 0px 50px 0px;
-    box-shadow: 0px 0px 6px 0px #777777;
-    border: 1px solid #fff;
-}
-.gallery-columns a img {
-    transition: 1s;
-    cursor: zoom-in;
-}
-.gallery-columns .thumbnail:hover img {
-    transform: scale(1.07);
-}
-#baguetteBox-overlay .full-image img {
-    border: 3px solid #fff;
-    border-radius: 10px;
-}
-
+    
+    /*-- Images Hover Effects CSS --*/
+    .img-box {
+        position: relative;
+        transition: .5s;
+        max-height: 230px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        border-radius: 0px 100px;
+    }
+    .img-box img {
+        max-width: 100%;
+        border: 3px solid #0d0669;
+        position: relative;
+        width: 100%;
+    }
+    .img-box::before {
+        content: '';
+        border-left: 3px solid #ffffff;
+        border-top: 3px solid #ffffff;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        transition: .5s;
+    }
+    .img-box::after {
+        content: '';
+        border-right: 3px solid #ffffff;
+        border-bottom: 3px solid #ffffff;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        transition: .5s;
+    }
+    
+    .img-box:hover {
+          transform: scale(1.04);
+    }
+    
+    .img-box:hover::before {
+          left: 10px;
+          top: 10px;
+    }
+    .img-box:hover::after {
+          right: 10px;
+          bottom: 10px;
+    }
     </style>
             </section>
                      <!-- Content wrapper -->
@@ -416,48 +433,6 @@ body {
                         <h1 class="post-full-title" style="text-align: center;">COLLEGE GALLERY</h1>
                         </div>
                         <div class="post-content">
-                            <div class="photoGallery">
-                                <div class="container">
-                                    <h2 class="text-center">Gallery</h2>
-                                    <p class="text-center">Click on gallery image and view images as slides</p> 
-                                    <hr>      
-                                    <div class="gallery-columns">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="img/gallery/15.jpeg" class="thumbnail">
-                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="img/gallery/1.jpg" class="thumbnail">
-                                                    <img src="img/gallery/1.jpg" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="img/gallery/2.jpg" class="thumbnail">
-                                                    <img src="img/gallery/2.jpg" class="img-fluid" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="img/gallery/15.jpeg" class="thumbnail">
-                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="images/image-five.jpg" class="thumbnail">
-                                                    <img src="images/image-five.jpg" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                            <div class="col-sm-6 col-lg-4">
-                                                <a href="img/gallery/15.jpeg" class="thumbnail">
-                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                     <div class="row">
 
                         <div class="col-sm-6 col-lg-4">
@@ -731,12 +706,6 @@ body {
     })
 
 
-</script>
-<!-- Baguettebox JS for image popup -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-<script>
-    // baguetteBox.run is predefined in Baguette Box JS
-    baguetteBox.run('.gallery-columns');
 </script>
 </body>
 </html>
