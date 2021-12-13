@@ -373,9 +373,21 @@ background: #fff;
         } else {
             //fixes issue described above
             $popover.popover('toggle');
+            var width=window.innerWidth;
+            
+function resiz_header_height(){
+var height = (window.innerWidth * 200) / width;
+$('.header').css('min-height', height + 'px');
+}
+$(document).ready(function(){
+resiz_header_height();
+$(window).resize(resiz_header_height);
+});
+
         }
     });
 })
+
 
   
 
