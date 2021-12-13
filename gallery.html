@@ -421,6 +421,41 @@ body {
           right: 10px;
           bottom: 10px;
     }
+
+    .photoGallery {
+    padding: 30px 0px;
+}
+.photoGallery h2 {
+    font-size: 40px;
+    color: #2196F3;
+}
+.photoGallery p {
+    font-size: 18px;
+    color: #9e9e9e;
+}
+.gallery-columns {
+    padding: 15px 0px;
+    margin-top: 30px;
+}
+.gallery-columns .thumbnail {
+    max-height: 235px;
+    overflow: hidden;
+    display: block;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 0px 0px 6px 0px #777777;
+    border: 1px solid #fff;
+}
+.gallery-columns a img {
+    transition: 1s;
+    cursor: zoom-in;
+}
+.gallery-columns .thumbnail:hover img {
+    transform: scale(1.07);
+}
+#baguetteBox-overlay .full-image img {
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
     </style>
             </section>
                      <!-- Content wrapper -->
@@ -433,6 +468,54 @@ body {
                         <h1 class="post-full-title" style="text-align: center;">COLLEGE GALLERY</h1>
                         </div>
                         <div class="post-content">
+                            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                            <!-- Baguettebox CSS for image popup -->
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+                            <div class="photoGallery">
+                                <div class="container">
+                                    <h2 class="text-center">Gallery</h2>
+                                    <p class="text-center">Click on gallery image and view images as slides</p> 
+                                    <hr>      
+                                    <div class="gallery-columns">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="img/gallery/15.jpeg" class="thumbnail">
+                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="img/gallery/15.jpeg" class="thumbnail">
+                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="img/gallery/15.jpeg" class="thumbnail">
+                                                    <img src="img/gallery/15.jpeg" class="img-fluid" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="img/gallery/15.jpeg" class="thumbnail">
+                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="images/image-five.jpg" class="thumbnail">
+                                                    <img src="images/image-five.jpg" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-sm-4 mb-4">
+                                                <a href="img/gallery/15.jpeg" class="thumbnail">
+                                                    <img src="img/gallery/15.jpeg" class="img-fluid" alt="Gallery Image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                     <div class="row">
 
                         <div class="col-sm-6 col-lg-4">
@@ -706,6 +789,12 @@ body {
     })
 
 
+</script>
+<!-- Baguettebox JS for image popup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+<script>
+    // baguetteBox.run is predefined in Baguette Box JS
+    baguetteBox.run('.gallery-columns');
 </script>
 </body>
 </html>
