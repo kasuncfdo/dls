@@ -1642,3 +1642,19 @@ box-sizing: border-box;
 transition: all 200ms linear;
 }
 
+/****Last Update-21-12-14*****/
+
+/* Large rounded red border */
+hr.redline {
+  border: 2px solid red;
+  border-radius: 0px;
+        margin: auto;
+}
+
+/* Large rounded dark blue border */
+hr.blueline {
+  border: 2px solid blue;
+  border-radius: 0px;
+        margin: auto;
+}
+
