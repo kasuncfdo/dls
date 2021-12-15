@@ -434,6 +434,13 @@ body {
 
     .footer-content ul {
 	padding: 0 3px;
+  list-style: none; /* Remove default bullets */
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(255, 255, 255); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .footer-content h2 {
