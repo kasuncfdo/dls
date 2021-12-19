@@ -1666,14 +1666,14 @@ transition: all 200ms linear;
 
 /* Large rounded red border */
 hr.redline {
-  border: 2.8px solid rgb(231, 11, 11);
+  border: 2.8px dashed rgb(231, 11, 11);
   border-radius: 0px;
         margin: 0px;
 }
 
 /* Large rounded dark blue border */
 hr.blueline {
-  border: 2.9px solid rgb(17, 17, 146);
+  border: 2.9px dashed rgb(17, 17, 146);
   border-radius: 0px;
         margin: 0px;
 }
