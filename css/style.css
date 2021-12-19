@@ -1677,7 +1677,7 @@ hr.blueline {
   height: 2.8px;
   background-color: #010997;
   border: none;
-  margin-top: 2rem;
+  margin-top: -2rem;
 
 /***Last Updated 21-12-19***/
 @media only screen and (width: 1024px) {
