@@ -1674,7 +1674,7 @@ hr.redline {
 
 /* Large rounded dark blue border */
 hr.blueline {
-  height: 2.8px;
+  height: 5.8px;
   background-color: #010997;
   border: none;
   margin-top: -2rem;
