@@ -1687,3 +1687,12 @@ hr.blueline {
     margin-right: -7rem;
 }
 }
+
+@media screen and (min-width: 1900px) {
+	.navbar-nav {
+    /* float: left; */
+    /* margin-bottom: 11rem; */
+    margin-left: -7rem;
+    margin-right: -7rem;
+}
+}
