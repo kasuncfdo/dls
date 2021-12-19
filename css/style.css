@@ -1678,3 +1678,12 @@ hr.blueline {
         margin: 0px;
 }
 
+/***Last Updated 21-12-19***/
+@media only screen and (width: 1024px) {
+	.navbar-nav {
+    /* float: left; */
+    /* margin-bottom: 11rem; */
+    margin-left: -7rem;
+    margin-right: -7rem;
+}
+}
