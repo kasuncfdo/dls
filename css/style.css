@@ -1669,7 +1669,7 @@ hr.redline {
   height: 2.8px;
   background-color: red;
   border: none;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 /* Large rounded dark blue border */
@@ -1677,7 +1677,7 @@ hr.blueline {
   height: 2.8px;
   background-color: #010997;
   border: none;
-  margin-top: 5rem;
+  margin-top: 2rem;
 
 /***Last Updated 21-12-19***/
 @media only screen and (width: 1024px) {
