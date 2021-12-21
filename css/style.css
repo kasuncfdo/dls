@@ -1680,7 +1680,7 @@ hr.blueline {
   margin-top: -2rem;
 
 /***Last Updated 21-12-19***/
-@media only screen and (width: 1024px) {
+@media screen (width: 1024px){
 	.navbar-nav {
     /* float: left; */
     /* margin-bottom: 11rem; */
@@ -1688,12 +1688,17 @@ hr.blueline {
     margin-right: -7rem;
 }
 }
-
+/**
 @media screen and (min-width: 1900px) {
 	.navbar-nav {
     /* float: left; */
     /* margin-bottom: 11rem; */
-    margin-left: -7rem;
+   /** margin-left: -7rem;
     margin-right: -7rem;
 }
+}****/
+
+/***Page Paragraph***/
+p {
+  text-align: justify;
 }
