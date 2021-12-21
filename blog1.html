@@ -195,15 +195,22 @@
             </div>
             <section>
                 <style>
+                   @media (max-width: 480px) {
+                   .card{  
+                   margin-top: -2.6rem;
+                   }
+                  }
                   
-            
+                  .wrapper{
+	min-height: -0rem;
+                  }
             
             h2 {
               margin-top: 0;
             }
             
             .card {
-    padding: 94px;
+    padding: 4.1rem;
     /* background: #fff; */
     /* max-width: 1288px; */
     border-radius: 20px;
@@ -229,185 +236,6 @@
            /************ .contents-wrapper{
                 background-image: url("./img/bg\ layer.jpg");
             } ****************/
-                </style>
-            <style>
-                * {
-                  box-sizing: border-box;
-                  margin: 0;
-                }
-               
-                .movie_card {
-                  position: relative;
-                  display: block;
-                  width: 850px;
-                  margin: 70px auto;
-                  height: auto;
-                  margin: 30px auto;
-                  overflow: hidden;
-                  border-radius: 10px;
-                  transition: all 0.4s;
-                }
-                .movie_card:hover {
-                  transform: scale(1.02);
-                  transition: all 0.4s;
-                }
-                .movie_card .info_section {
-                  position: relative;
-                  width: 100%;
-                  height: 100%;
-                  background-blend-mode: multiply;
-                  z-index: 2;
-                  border-radius: 10px;
-                }
-                .movie_card .info_section .movie_header {
-                  position: relative;
-                  padding: 25px;
-                  height: 40%;
-                }
-                .movie_card .info_section .movie_header h1 {
-                  color: #fff;
-                  font-weight: 400;
-                }
-                .movie_card .info_section .movie_header h4 {
-                  color: #9ac7fa;
-                  font-weight: 400;
-                }
-                .movie_card .info_section .movie_header .minutes {
-                  display: inline-block;
-                  margin-top: 10px;
-                  color: #fff;
-                  padding: 5px;
-                  border-radius: 5px;
-                  border: 1px solid rgba(255, 255, 255, 0.13);
-                }
-                .movie_card .info_section .movie_header .type {
-                  display: inline-block;
-                  color: #cee4fd;
-                  margin-left: 10px;
-                }
-                .movie_card .info_section .movie_header .locandina {
-                  position: relative;
-                  float: left;
-                  margin-right: 20px;
-                  height: 120px;
-                  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
-                }
-                .movie_card .info_section .movie_desc {
-                  padding: 25px;
-                  height: 50%;
-                }
-                .movie_card .info_section .movie_desc .text {
-                  color: #cfd6e1;
-                }
-                .movie_card .info_section .movie_extras {
-                  height: 10%;
-                  padding-left: 15px;
-                  padding-bottom: 20px;
-                }
-                .movie_card .info_section .movie_social ul {
-                  list-style: none;
-                  padding: 0;
-                }
-                .movie_card .info_section .movie_extras ul li {
-                  display: inline-block;
-                  color: rgba(255, 255, 255, 0.4);
-                  transition: color 0.3s;
-                  transition-delay: 0.15s;
-                  margin: 0 10px;
-                }
-                .movie_card .info_section .movie_extras ul li:hover {
-                  transition: color 0.3s;
-                  color: rgba(255, 255, 255, 0.8);
-                }
-                .movie_card .info_section .movie_extras ul li i {
-                  font-size: 19px;
-                  cursor: pointer;
-                }
-                .movie_card .info_section .movie_extras .extras {
-                  display: inline-block;
-                  margin-top: 10px;
-                  color: #fff;
-                  padding: 5px;
-                  border-radius: 5px;
-                  border: 1px solid rgba(255, 255, 255, 0.13);
-                }
-                .movie_card .blur_back {
-                  position: absolute;
-                  top: 0;
-                  z-index: 1;
-                  height: 100%;
-                  right: 0;
-                  background-size: cover;
-                  border-radius: 11px;
-                }
-                
-                @media screen and (min-width: 768px) {
-                  .movie_header {
-                    width: 60%;
-                  }
-                
-                  .movie_desc {
-                    width: 50%;
-                  }
-                
-                  .info_section {
-                    background: linear-gradient(to right, #0c0c0d 50%, transparent 100%);
-                  }
-                
-                  .blur_back {
-                    width: 80%;
-                    background-position: -100% 10% !important;
-                  }
-                }
-                @media screen and (max-width: 768px) {
-                  .movie_card {
-                    width: 95%;
-                    margin: 70px auto;
-                    min-height: 350px;
-                    height: auto;
-                  }
-                
-                  .blur_back {
-                    width: 100%;
-                    background-position: 50% 50% !important;
-                  }
-                
-                
-                
-                  .movie_desc {
-                    width: 100%;
-                  }
-                 .movie_desc .text {
-                    width: 90%;
-                  }
-                
-                }
-                #bright {
-                  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
-                }
-                #bright:hover {
-                  box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
-                }
-                
-                .bright_back {
-                  background: url("img/Crests.jpg");
-                }
-                
-                #tomb {
-                  box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
-                }
-                #tomb:hover {
-                  box-shadow: 0px 0px 120px -55px rgba(19, 160, 134, 0.6);
-                }
-                
-                .tomb_back {
-                  background: url("/img/Bro.\ R.\ Joseph\ Jeyakanthan.jpg");
-                }
-                
-                
-                .ave_back {
-                  background: url("/img/Bro.\ R.\ Joseph\ Jeyakanthan.jpg");
-                }
                 </style>
                 </head>
                 <body>
