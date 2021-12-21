@@ -56,6 +56,8 @@ body{
 	flex:1;
 	line-height: 1.5;
 	font-size: 16px;
+  text-align: justify;
+
 }
 
 .contents-wrapper .content{
@@ -1697,9 +1699,3 @@ hr.blueline {
     margin-right: -7rem;
 }
 }****/
-
-/***Page Paragraph***/
-p {
-  margin: 0 0 10px;
-  text-align: justify;
-}
