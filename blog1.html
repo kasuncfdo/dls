@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    //<![CDATA[ 
+window.onload=function(){
+
+    <script type='text/javascript'>
+      Date.prototype.toMyString = function () {
+         //If month/day is single digit value add perfix as 0
+          function AddZero(obj) {
+                obj = obj + '';
+                if (obj.length == 1)
+                    obj = "0" + obj
+                return obj;
+          }
+      
+          var output = "";
+          output += this.getFullYear();
+          output += AddZero(this.getMonth()+1);
+          output += AddZero(this.getDate());
+      
+          return output; 
+      }
+      
+      var d = new Date();
+      
+      var link = document.getElementById("link");
+      
+      link.setAttribute("href","http://www.pressdisplay.com/pressdisplay/pageview.aspx?issue=1245"+d.toMyString()+"00000000001001");
+      
+      </script>
+    }//]]>
 </head>
 <style>
 .navbar-nav li{
