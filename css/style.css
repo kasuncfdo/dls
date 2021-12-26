@@ -322,7 +322,7 @@ nav ul li{
 .announcement-content ul li,.news-content ul li{
 	display: block;
 	background-color: white;
-	color: rgb(50,50,50);
+	color: black;
 	padding: 1rem;
 	margin:1rem 0;
   border-radius: 0.5rem;
