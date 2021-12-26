@@ -325,7 +325,16 @@ nav ul li{
   }
 }
 
-.announcement-content ul li,.news-content ul li{
+.news-content ul li {
+	display: block;
+	background-color: white;
+	color: black;
+	padding: 1rem;
+	margin:-1rem 0;
+  border-radius: 0.5rem;
+}
+
+.announcement-content ul li {
 	display: block;
 	background-color: white;
 	color: black;
