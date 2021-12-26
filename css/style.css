@@ -319,6 +319,12 @@ nav ul li{
     margin-top: 2rem;
 }
 
+@media (max-width: 480px) {
+  .announcement-content ul li,.news-content ul li{
+    border-radius: 0.5rem;
+  }
+}
+
 .announcement-content ul li,.news-content ul li{
 	display: block;
 	background-color: white;
