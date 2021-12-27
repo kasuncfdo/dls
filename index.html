@@ -838,19 +838,8 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-<script>
-	function tick2(){
-		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
-	}
-	setInterval(function(){ tick2 () }, 3500);
-
-
-	function tick3(){
-		$('#ticker_03 li:first').animate({'opacity':100}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 0); });
-	}
-	setInterval(function(){ tick3 () }, 4000);
-
-</script>
+<br>
+<br>
  <!--RECENT NEWS AND EVENTS OF DLS-->
     <section>
         <style>
@@ -1354,7 +1343,19 @@ $(document).ready(function(){
 })
 </script><script type="text/javascript" src="js/jquery.paginate.min.js "></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+	function tick2(){
+		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
+	}
+	setInterval(function(){ tick2 () }, 3500);
 
+
+	function tick3(){
+		$('#ticker_03 li:first').animate({'opacity':100}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 0); });
+	}
+	setInterval(function(){ tick3 () }, 4000);
+
+</script>
 
 <!--
 /********************************
