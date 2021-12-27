@@ -651,9 +651,6 @@ $(document).ready(function(){
     max-width: 77%;
 }
 
-#ticker_02 {
-	height: 100px;
-}
   </style>
   <div class="box1">
     <h1>Access the College LMS</h1>
@@ -797,19 +794,25 @@ $(document).ready(function(){
             <div class="col-sm-4" id="news">
                 <div class='news-content '>
                     <div class="widgets-title"><h2>News</h2></div>
-                    <ul id="ticker_02" class="ticker">
+                    <ul id="news-list">
                         <li>
-                            <a href="blog.html">Dear Old Boys &amp; Well Wishers</a> of De La Salle College, It is a well known fact that Rev Br Joseph Jayakanthan who was waiting for all of us, took over duties as the Principal of the school on October 06th,  2021.
-                            <br><a href="news.html">See more</a>
-                        </li>
-                        <li>
-                            <a href="blog.html" target="_blank"></a>Nearly after 10 months a Holy Mass offered by senior students of the college, and
+                            <span class="css_blink ">
+                            <a href="blog.html" target="_blank">Dear Old Boys & Well Wishers</a> of De La Salle College, It is a well known fact that Rev Br Joseph Jayakanthan who was waiting for all of us, took over duties as the Principal of the school on October 06th,  2021.
                             </span>
-                            <br><a href="news.html">See more</a>
+                            </br><a href="news.html">See more</a>
+                           
                         </li>
-
                     </ul>
 
+                    <ul id="news-list">
+                        <li>
+                            <span class="css_blink ">
+                            <a href="blog.html" target="_blank"></a>Nearly after 10 months a Holy Mass offered by senior students of the college, and
+                            </span>
+                            </br><a href="news.html">See more</a>
+                           
+                        </li>
+                    </ul>
                     <div id="news-list-pagination">
                         <a id="news-list-previous" href="#">
                             <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
@@ -1327,19 +1330,7 @@ $(document).ready(function(){
 })
 </script><script type="text/javascript" src="js/jquery.paginate.min.js "></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-<script>
-	function tick2(){
-		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
-	}
-	setInterval(function(){ tick2 () }, 3500);
 
-
-	function tick3(){
-		$('#ticker_03 li:first').animate({'opacity':100}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 0); });
-	}
-	setInterval(function(){ tick3 () }, 4000);
-
-</script>
 
 <!--
 /********************************
