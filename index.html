@@ -844,7 +844,7 @@ $(document).ready(function(){
 
 
 	function tick3(){
-		$('#ticker_03 li:first').animate({'opacity':100}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 1); });
+		$('#ticker_03 li:first').animate({'opacity':100}, 200, function () { $(this).appendTo($('#ticker_03')).css('opacity', 0); });
 	}
 	setInterval(function(){ tick3 () }, 4000);
 
