@@ -1696,6 +1696,7 @@ hr.blueline {
   background-color: #010997;
   border: none;
   margin-top: -2rem;
+}
 
 /***Last Updated 21-12-19***/
 @media screen (width: 1024px){
@@ -1715,3 +1716,13 @@ hr.blueline {
     margin-right: -7rem;
 }
 }****/
+
+/***Last Update:21-12-27***/
+.easy-breadcrumb {
+  background: #fafafa none repeat scroll 0 0;
+  border-radius: 9px;
+  padding: 6px 43px;
+  margin-left: -7rem;
+  margin-right: -7rem;
+  margin-top: -5rem;
+}
