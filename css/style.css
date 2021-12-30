@@ -15,6 +15,9 @@
 /***************
 *General Styles
 ****************/
+html{
+  scroll-behavior: smooth;
+}
 
 .primary-color{
 	color:rgb(15,108,107) !important;
