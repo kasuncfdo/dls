@@ -1988,7 +1988,7 @@ nav:not(.rank-math-breadcrumb) ul {
 }
 
 @media (max-width: 480px) {
-h1 {
+.h1hm {
     font-size: 20px;
     font-family:'Goudy Old Style';
 }
