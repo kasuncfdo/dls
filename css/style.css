@@ -1979,3 +1979,8 @@ nav:not(.rank-math-breadcrumb) ul {
 	visibility: hidden
 }
 
+@media (max-width: 480px) {
+h1 {
+    font-size: 25px;
+}
+}
