@@ -15,6 +15,13 @@
 /***************
 *General Styles
 ****************/
+@font-face {
+  font-family: 'Goudy Old Style';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Goudy Old Style'), url('../fonts/GOUDOS.woff') format('woff');
+  }
+
 html{
   scroll-behavior: smooth;
 }
