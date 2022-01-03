@@ -1981,6 +1981,6 @@ nav:not(.rank-math-breadcrumb) ul {
 
 @media (max-width: 480px) {
 h1 {
-    font-size: 20px;
+    font-size: 10px;
 }
 }
