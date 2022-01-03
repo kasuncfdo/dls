@@ -1676,7 +1676,9 @@ hr.blueline {
   margin-top: -5rem;
 }
 
-                     hgroup h1 span .site-title{
+/***HEADER,TOP-CREST***/
+
+  hgroup h1 span .site-title{
     font-family: 'trajan pro';
     text-decoration: none;
     text-shadow: 0px 0px 1px #aaaaaa;
