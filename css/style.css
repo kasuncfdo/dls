@@ -2046,3 +2046,22 @@ nav:not(.rank-math-breadcrumb) ul {
     transform: scale(1);
   }
 }
+
+.ps-mark {
+  display: none;
+  box-sizing: border-box !important;
+  /* z-index: 9999!important; */
+  position: absolute !important;
+  left: 5px !important;
+  bottom: 5px !important;
+  /* display: flex!important; */
+  flex-wrap: nowrap !important;
+}
+
+.ps-mark a span {
+  display: none;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+}
