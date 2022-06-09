@@ -416,9 +416,10 @@ nav ul li {
 }
 
 .dir-detail > img {
-  border-radius: 100%;
+  border-radius: 10%;
   border: 5px solid #f0f0f0;
   margin-bottom: 1rem;
+  max-width: inherit;
 }
 
 .dir-detail > div:nth-child(2) {
