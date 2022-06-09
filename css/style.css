@@ -2067,7 +2067,7 @@ nav:not(.rank-math-breadcrumb) ul {
   line-height: 0 !important;
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .dir-detail {
     text-align: center;
     /* display: inline-block; */
