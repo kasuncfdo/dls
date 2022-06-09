@@ -2066,3 +2066,36 @@ nav:not(.rank-math-breadcrumb) ul {
   height: 0 !important;
   line-height: 0 !important;
 }
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .dir-detail {
+    text-align: center;
+    /* display: inline-block; */
+    line-height: 1.6;
+  }
+
+  .dir-msg {
+    display: inline-grid;
+    /margin-top: 2rem;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 1;
+    z-index: 0;
+    10: ;
+    pa: ;
+    padding-top: 0;
+    dding-bottom: 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2pxrgba (0, 0, 0, 0.6);
+  }
+
+  .timg {
+    width: auto;
+    height: 90px;
+  }
+}
