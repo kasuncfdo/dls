@@ -2097,4 +2097,8 @@ nav:not(.rank-math-breadcrumb) ul {
   .timg {
     height: 60px;
   }
+
+  .card {
+    padding: 36px;
+  }
 }
