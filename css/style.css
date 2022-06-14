@@ -2097,8 +2097,16 @@ nav:not(.rank-math-breadcrumb) ul {
   .timg {
     height: 60px;
   }
+}
 
+@media (min-width: 320px) and (max-width: 480px) {
   .card {
     padding: 36px;
+    max-width: 1288px;
+    border-radius: 20px;
+    margin: 60px auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   }
 }
