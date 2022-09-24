@@ -1,3 +1,4 @@
 {
-  "livePreview.defaultPreviewPath": "/about.html"
+  "livePreview.defaultPreviewPath": "/about.html",
+  "nuxt.isNuxtApp": false
 }
