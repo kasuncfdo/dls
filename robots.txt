@@ -7,5 +7,8 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /Under_Construction.html/
+Disallow: /404.html/
+Disallow: /blog1.html/
+Disallow: /blog2.html/
 Disallow: /404/
 Sitemap: https://delasalle.lk/sitemap.xml

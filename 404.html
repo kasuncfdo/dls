@@ -1,68 +1,117 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>404 - File or directory not found.</title>
+<!DOCTYPE html>
+<html>
+    <head>
+        
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-language" content="en-us">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<title>404 - File or directory not found.</title>
 
-    <style type="text/css">
-      body {
-        margin: 0;
-        font-size: 0.7em;
-        font-family: Verdana, Arial, Helvetica, sans-serif;
-        background: #eeeeee;
-      }
-      fieldset {
-        padding: 0 15px 10px 15px;
-      }
-      h1 {
-        font-size: 2.4em;
-        margin: 0;
-        color: #fff;
-      }
-      h2 {
-        font-size: 1.7em;
-        margin: 0;
-        color: #cc0000;
-      }
-      h3 {
-        font-size: 1.2em;
-        margin: 10px 0 0 0;
-        color: #000000;
-      }
-      #header {
-        width: 96%;
-        margin: 0 0 0 0;
-        padding: 6px 2% 6px 2%;
-        font-family: "trebuchet MS", Verdana, sans-serif;
-        color: #fff;
-        background-color: #555555;
-      }
-      #content {
-        margin: 0 0 0 2%;
-        position: relative;
-      }
-      .content-container {
-        background: #fff;
-        width: 96%;
-        margin-top: 8px;
-        padding: 10px;
-        position: relative;
-      }
-    </style>
-  </head>
+<style type="text/css">
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    background: #f1f2f3;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 4vmin;
+    color: #15171A;
+    font-size: 2rem;
+    line-height: 1.4em;
+    /*font-family: sans-serif;*/
+    font-family: "Google Sans",arial,sans-serif;
+    /*background: #f1f2f3;*/
+    background: #f3f5fe !important;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-  <body>
-    <div id="header"><h1>Server Error</h1></div>
-    <div id="content">
-      <div class="content-container">
-        <fieldset>
-          <h2>404 - File or directory not found.</h2>
-          <h3>
-            The resource you are looking for might have been removed, had its
-            name changed, or is temporarily unavailable.
-          </h3>
-        </fieldset>
-      </div>
-    </div>
-  </body>
+::selection {
+    text-shadow: none;
+    background: #cbeafb;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-height: 360px;
+    margin: 0 0 4vmin;
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow:
+        0 50px 100px -20px rgb(50 50 93 / 8%),
+        0 30px 60px -30px rgb(0 0 0 / 13%),
+        0 10px 20px -10px rgb(0 0 0 / 8%);
+}
+
+.content svg{
+    display:block;
+    width:50px;
+    height:50px;
+    fill:none !important;
+    stroke:#08102b;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:1.5
+    
+}
+
+h1 {
+    margin: 0 0 0.3em;
+    font-size: 4rem;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+p {
+    margin: 0;
+    opacity: 0.7;
+    font-weight: 400;
+}
+img {
+    display: block;
+    margin: 0 auto 40px;
+}
+@media (max-width: 500px) {
+    body { font-size: 1.8rem; }
+    h1 { font-size: 3.4rem; }
+}
+</style>
+
+</head>
+
+<body>
+<div class="content">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg><br>
+    <h1>404 - File or directory not found.
+    </h1>
+    <p>The resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+</div>
+
+
+</body>
 </html>
