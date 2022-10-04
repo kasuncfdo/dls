@@ -1885,14 +1885,17 @@ li {
 
 ::-moz-selection {
   background: #20247b !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 ::selection {
   background: #20247b !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 ::-moz-selection {
   background: #20247b !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .search-wrapper {
