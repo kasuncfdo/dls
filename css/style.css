@@ -1884,15 +1884,15 @@ li {
 }
 
 ::-moz-selection {
-  background: #20247b;
+  background: #20247b !important;
 }
 
 ::selection {
-  background: #20247b;
+  background: #20247b !important;
 }
 
 ::-moz-selection {
-  background: #20247b;
+  background: #20247b !important;
 }
 
 .search-wrapper {
