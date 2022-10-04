@@ -1884,15 +1884,15 @@ li {
 }
 
 ::-moz-selection {
-  background: rgba(255, 255, 255, 0.2);
+  background: #20247b;
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.2);
+  background: #20247b;
 }
 
 ::-moz-selection {
-  background: rgba(255, 255, 255, 0.2);
+  background: #20247b;
 }
 
 .search-wrapper {
