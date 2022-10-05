@@ -2113,3 +2113,8 @@ nav:not(.rank-math-breadcrumb) ul {
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   }
 }
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
