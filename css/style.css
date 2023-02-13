@@ -2112,9 +2112,16 @@ nav:not(.rank-math-breadcrumb) ul {
     margin-right: 25px;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
   }
+	
+	.timg {
+	    display: none;
+	}
+	
 }
 
 .inactiveLink {
   pointer-events: none;
   cursor: default;
 }
+
+
