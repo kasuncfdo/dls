@@ -411,8 +411,13 @@ $(document).ready(function(){
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item slider1 active">
-                    <video autoplay="autoplay" autobuffer="autobuffer" muted="muted" width="100%" height="auto">
-                        <source src="vid/intro.mp4" type="video/mp4">
+                    <video class="intro-vid" autoplay="autoplay" autobuffer="autobuffer" muted="muted" width="100%" height="auto">
+                      <source src="vid/intro.mp4" type="video/mp4">
+                    <script>
+                      var video = document.getElementById("video");
+                      video.loop = true;
+                      video.preload = true;
+                    </script>
                     </video>
                     <div class="carousel-caption slider-con">
                       <!--img class="timg" height="90px" src="https://raw.githubusercontent.com/kasuncfdo/dls/main/College%20Assests/College-Items/DLS_WEBCREST.png" alt="DLSOBU" -->
@@ -425,6 +430,49 @@ $(document).ready(function(){
                       font-family:Georgia, 'Times New Roman', Times, serif
                       ;
                     }
+		.item , .slider1 active {
+		    padding: 7px;
+		    background: #0a0b3b;}
+
+		.carousel-wrapper {
+		    background: #0a0b3b !important;
+		    display: none !important;  }
+
+		@media only screen and (max-width: 768px) {
+		  .carousel-wrapper {
+		    background: #0a0b3b !important;
+		    display: none;
+		  }
+			
+			.item , .slider1 active {
+		    padding: 0;
+		    background: #0a0b3b;}
+			
+			.intro-vid {
+		    border-radius: 1em;
+		    border: 2px solid white;
+		} }
+
+		.slick-slide img {
+		    display: block;
+		    border-radius: 2rem;
+		    padding: 10px;
+		    background-size: cover !important;
+		}
+
+		.carousel-items {
+		    overflow: unset;
+		    border: 0 !important;
+		    border-bottom: 0;
+		    border-top: 0;
+		    background: #040426 !important;
+		}
+
+		.intro-vid {
+		    border-radius: 1em;
+		    border: 2px solid white;
+		}
+			  
                     </style>
                    
                         <!--b class="parra" style="font-size: 16px;" style="margin: 10px;">OVER 118TH PROUD ANNIVERSARY WITH <span> DE LA SALLE COLLEGE</span></b>
