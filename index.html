@@ -411,13 +411,8 @@ $(document).ready(function(){
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item slider1 active">
-                    <video class="intro-vid" autoplay="autoplay" autobuffer="autobuffer" muted="muted" width="100%" height="auto">
+                    <video class="intro-vid" preload="auto" loop="true" autoplay="autoplay" autobuffer="autobuffer" muted="muted" width="100%" height="auto" poster="vid/intro-thumbnail.jpg">
                       <source src="vid/intro.mp4" type="video/mp4">
-                    <script>
-                      var video = document.getElementById("video");
-                      video.loop = true;
-                      video.preload = true;
-                    </script>
                     </video>
                     <div class="carousel-caption slider-con">
                       <!--img class="timg" height="90px" src="https://raw.githubusercontent.com/kasuncfdo/dls/main/College%20Assests/College-Items/DLS_WEBCREST.png" alt="DLSOBU" -->
