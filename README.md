@@ -11,7 +11,7 @@
 
 <p align="center">
     <a href="https://delasalle.lk/">Delasalle.lk</a> •
-    <a href="https://delasalle.lk/newsroom">Newsroom</a> •
+    <a href="https://delasalle.lk/news">Newsroom</a> •
     <a href="https://www.linkedin.com/school/delasallelk/">Linkedin</a> •
     <a href="https://twitter.com/delasallelk/">Twitter</a>
     <br /><br />
@@ -45,6 +45,8 @@
 
 Welcome to the official GitHub repository for [De La Salle College](https://delasalle.lk/)! This repository contains the source code and resources for our website, which serves as the online hub for De La Salle College, a leading educational institution in Sri Lanka. We aim to create an online platform that is engaging, informative, and user-friendly for our students, staff, and the broader community.
 
+### Please note that delasalle.lk is the sole official website of De La Salle College, Colombo and we hold exclusive rights to update and manage its contents. Using our website's materials without proper permission raises significant legal and ethical issues. We have invested considerable time and resources in creating and maintaining our website, and the unauthorized duplication of our content undermines our efforts.
+
 ## Overview
 
 De La Salle College is committed to providing quality education and fostering the holistic development of its students. Our website aims to effectively communicate information about the college's history, academic curriculum, extracurricular activities, events, and achievements, while also providing a platform for the college community to stay connected and engaged.
@@ -65,7 +67,7 @@ Visit our website: [https://delasalle.lk/](https://delasalle.lk/)
 
 ### Announcements
 
-We are now live as [official website 🚀](https://kasuncfdo.github.io/dls).
+We are now live as [official website 🚀](https://delasalle.lk/).
 
 
 <p>We are delighted to announce the launch of our new  college website. We are pleased to officially announce the launch on June, 2022, about 03 months of hard effort and commitment by Mast. Kasun Chanuka Fernando (Student of DLS, A/L Section). We intended to make the new website more user-friendly for our visitors by making it faster, easier to navigate, and more mobile-friendly,a more convenient approach to learn more about De La Salle College and browse information according to their preferences</P>
